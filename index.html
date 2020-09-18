@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Review</title>
+    <style>
+        sup {
+            color: red;
+        }
+        ul.form {
+            padding: 0;
+            list-style: none;
+        }
+        label {
+            display: block;
+        }
+        input, button {
+            margin-bottom: 10px;
+        }
+        .test, .message {
+            color: red;
+        }
+        .pass {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>JS Review</h1>
+    <!-- <input type="date" name="date" id="date">
+    <button onclick="checkAge();">Check Age</button> -->
+    <p class="message">&nbsp;</p>
+    <ul class="form">
+        <li id="one" class="foo">
+            <label for="username">Username <sup>*</sup></label>
+            <input type="text" id="username">
+        </li>
+        <li class="foo">
+            <label for="pwd1">Password <sup>*</sup></label>
+            <input type="password" name="pwd1" id="pwd1">
+        </li>
+        <li class="foo">
+            <label for="pwd2">Confirm Password <sup>*</sup></label>
+            <input type="password" name="pwd2" id="pwd2">
+        </li>
+        <li><input type="checkbox" name="showpass" id="showpass"> Show password</li>
+        <li>
+            <button onclick="checkInfo();">Add User</button>
+            <ul>
+                <li class="test test-length">
+                    Password must have at least 8 characters, but no more than 20.
+                </li>
+                <li class="test test-char">
+                    Must contain at least one special charcter(!, @, #, $, %, &).
+                </li>
+                <li class="test test-upper">
+                    Must contain at least one uppercase letter.
+                </li>
+                <li class="test test-lower">
+                    Must contain at least one lowercase letter.
+                </li>
+                <li class="test test-number">
+                    Must contain at least one number.
+                </li>
+                <li class="test test-space">
+                    Can't contain spaces.
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <ul id="output"></ul>
+    <button class="button" data-char="x">&times;</button>
+    <button class="button" data-char="/">/</button>
+    <script src="js/app.js"></script>
+</body>
+</html>
